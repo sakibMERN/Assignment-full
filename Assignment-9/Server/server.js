@@ -1,12 +1,14 @@
 const express = require('express');
 const helmet = require('helmet');
+const cors = require('cors');
+const morgan = require('morgan');
 const { default: mongoose } = require('mongoose');
 const app = express();
 require('dotenv').config();
 const bookManagement = require("./routes/book");
 
 
-const port = process.env.PORT || 3000;
+
 app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
@@ -17,7 +19,7 @@ app.use(helmet());
 app.use("/", bookManagement);
 
 
-
+const port = process.env.PORT || 3000;
 mongoose
 
     .connect(process.env.DATABASE)
