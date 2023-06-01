@@ -19,8 +19,9 @@ const bookSchema = new Schema(
         },
         publishedYear: {
             type:Number,
-        },
-    }
+        }
+    },
+    { timestamps: true, versionKey:false }
 
 );
 
