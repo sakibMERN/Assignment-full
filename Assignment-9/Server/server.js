@@ -3,6 +3,7 @@ const helmet = require('helmet');
 const { default: mongoose } = require('mongoose');
 const app = express();
 require('dotenv').config();
+const bookManagement = require("./routes/book");
 
 
 const port = process.env.PORT || 3000;
@@ -11,6 +12,9 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(helmet());
+
+
+app.use("/", bookManagement);
 
 
 
