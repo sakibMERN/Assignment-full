@@ -13,6 +13,17 @@ const productSchema = new Schema(
             trim: true,
             required: true,
         },
-        description: String,
+        description: {
+            type: String,
+            trim: true,
+            required: true,
+        },
+        createdAt:{
+            type: Date,
+            default: Date.now
+        }
     }
-)
+);
+
+const Product = mongoose.model('Product', productSchema);
+module.export = Product;
