@@ -22,9 +22,9 @@ app.use("/", router)
 
 
 const port = process.env.PORT || 3000;
-mongoose
 
-    .connect(process.env.DATABASE)
+
+mongoose.connect(process.env.DATABASE)
     .then(()=>{
         app.listen(port, () =>{
             console.log(`Server Running On Port${port}`);
