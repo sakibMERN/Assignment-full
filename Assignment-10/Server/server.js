@@ -3,9 +3,11 @@ const helmet = require('helmet');
 const cors = require('cors');
 const morgan = require('morgan');
 const { default: mongoose } = require('mongoose');
+const router = require('./routes/product');
 const app = express();
 require('dotenv').config();
-const bookManagement = require("./routes/book");
+
+
 
 
 
@@ -16,7 +18,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(helmet());
 
 
-app.use("/", bookManagement);
+app.use("/", router)
 
 
 const port = process.env.PORT || 3000;
