@@ -15,17 +15,21 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(helmet());
 
-
-app.use("/", bookManagement);
-
-
+//Database Connection
 const port = process.env.PORT || 3000;
-mongoose
 
-    .connect(process.env.DATABASE)
+mongoose.connect(process.env.DATABASE)
     .then(()=>{
         app.listen(port, () =>{
             console.log(`Server Running On Port${port}`);
         });
     })
     .catch((err) => console.log(err));
+
+
+
+// Routing express.application
+
+app.use("/", bookManagement);
+
+
