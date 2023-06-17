@@ -1,31 +1,47 @@
 body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* This is the <div> */
+.container{
+  background-color: rgb(81, 235, 215);
+  width: 1000px;
+  height: auto ;
+}
 
 h1{
   color: darkblue;
   font-size: 60px;
   text-align:center;
 }
-p,label,table{
-  margin-left: 20px;
-}
+
+
+/*Table part**/
+
 table{
-  background-color: brown;
+  background-color: rgb(140, 254, 115);
   width: 600px;
+  height: auto;
   text-align: center;
+  border: 5px solid black;
+  border-collapse:collapse ;
+  
 }
+
+/*image*/
+
 img{
   width: 500px;
   height: auto;
   float: right;
 }
-.container{
-  background-color: chartreuse;
-  width: 1000px;
-  height: auto ;
+/*List Part*/
+
+.a{
+  list-style-type: circle;
 }
-/* table{
-  width:500px;
-  margin: 10px;
-} */
+
+/*Combine Part*/
+
+p,label,table{
+  margin-left: 20px;
+}
