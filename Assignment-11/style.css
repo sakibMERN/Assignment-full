@@ -1,5 +1,12 @@
+:root{
+  --bg-color: rgb(196, 196, 245);
+  --font-size: 25px;
+  --width: 500px;
+}
+
 body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
 }
 /* This is the <div> */
 .container{
@@ -27,6 +34,15 @@ table{
   
 }
 
+table th, table td{
+  border: 1px solid rgb(6, 28, 119);
+  border-collapse: collapse;
+}
+
+table th{
+  background-color: darkorange;
+}
+
 /*image*/
 
 img{
@@ -45,3 +61,27 @@ img{
 p,label,table{
   margin-left: 20px;
 }
+
+.query{
+  color:rgb(105, 3, 3);
+  font-size: var(--font-size);
+}
+.btn{
+  background-color: rgb(6, 76, 99);
+  color:rgb(248, 248, 248);
+  width:100px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(249, 6, 6);
+}
+
+.btn:focus{
+  border: 2px solid red;
+}
+
+
