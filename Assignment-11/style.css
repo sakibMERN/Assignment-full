@@ -1,4 +1,31 @@
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+  color: darkblue;
+  font-size: 60px;
+  text-align:center;
+}
+p,label,table{
+  margin-left: 20px;
+}
 table{
+  background-color: brown;
+  width: 600px;
+  text-align: center;
+}
+img{
+  width: 500px;
+  height: auto;
+  float: right;
+}
+.container{
+  background-color: chartreuse;
+  width: 1000px;
+  height: auto ;
+}
+/* table{
   width:500px;
   margin: 10px;
-}
+} */
