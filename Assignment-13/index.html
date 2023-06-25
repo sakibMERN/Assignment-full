@@ -6,14 +6,88 @@
     <link rel="stylesheet" href="CSS/bootstrap.css">
     <title> Bootstrap Web Application</title>
 </head>
-<body>
-    
+<body data-bs-them="dark">
+
+  <div class="container-fluid">
+    <div class="row gx-1">
+
+      <!-- Navbar section -->
+      <nav class="navbar fixed-top navbar-expand-lg bg-danger-subtle p-2 shadow-lg">
+
+       <div class="container-fluid">
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navManuPanel">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+       <a href="#" class="navbar-brand">Student Result</a>
+
+       <div class="collapse navbar-collapse" id="navManuPanel">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"></a>
+          </li>
+
+        </ul>
+
+        <!-- Search Section -->
+        <div>
+          <form class="d-flex">
+            <input type="text" class="form-control mx-2">
+            <button class="btn btn-outline-success">Search</button>
+          </form>
+        </div>
+
+       </div>
+
+       </div>
+
+      </nav>
+
+      <!-- Header Section -->
 
 
+    </div>
+  </div>
 
-
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-6 bg-info ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ducimus, veritatis magni libero maxime eos nulla laudantium, est debitis possimus soluta corporis error dolores porro non dolor molestias! Enim totam, consectetur veritatis exercitationem recusandae veniam eaque aliquam praesentium dolor. Eos possimus illum impedit, tempora molestiae aspernatur sed accusamus, voluptates modi vel explicabo commodi asperiores sequi perspiciatis consequatur minus minima, totam pariatur eveniet suscipit voluptate voluptatum ipsam officia. Deleniti ex magni nihil? Maiores facere ullam quia adipisci. Architecto officiis sequi assumenda vero a est cupiditate accusamus quasi quas eum labore blanditiis hic reiciendis dicta ratione porro consequuntur exercitationem perferendis temporibus, nemo sunt optio! Doloribus, atque non quam numquam voluptate, eligendi modi magni placeat velit autem accusamus eius amet error. Perferendis, sequi magnam! Repellat eius corrupti inventore commodi ipsam provident nisi voluptatem quam iure cupiditate error necessitatibus doloribus exercitationem, odit doloremque voluptatum debitis possimus quibusdam perspiciatis labore harum dolorum. Totam adipisci minima, omnis neque similique reprehenderit provident. Temporibus quisquam labore, nemo aliquid laboriosam voluptates, quia neque eveniet sit ab, repudiandae cum debitis illo architecto accusamus assumenda. Officiis aut explicabo est praesentium et quas commodi, debitis alias quidem numquam nulla nobis consequuntur quibusdam reprehenderit aliquid dolore minus quis asperiores mollitia! Aperiam, itaque consequuntur!</p>
+      </div>
+    </div>
+  </div>
 
 
     <script src="JS/bootstrap.bundle.js"></script>
 </body>
 </html>
+
+
+<!-- <div class="from-check from-switch mx-4">
+  <input 
+  type="checkbox" 
+  class="from-check-input vissually-hidden"
+  id="lightDark"
+  checked
+  onclick="myFunction()"
+  >
+  <label class="form-check-label" for="lightDark">Mode</label>
+</div>
+
+<button onclick="myFunction()">Mode</button>
+
+
+<script>
+  function myFunction(){
+    let element = document.body;
+    element.dataset.bsTheme=element.dataset.bsTheme === "light" ? "dark" : "light";
+  }
+</script> -->
