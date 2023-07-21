@@ -4,6 +4,7 @@ import "./Content.css"
 const Content = () => {
 
           const textRef = useRef(null);
+          // const input= document.getElementById('myId')
 
           const handleClick = () => {
 
@@ -12,7 +13,7 @@ const Content = () => {
                     textRef.current.focus();
                     displayText(newText);
                   };
-          
+                  
                   const displayText = (text) => {
                     const displayedTextElement = document.getElementById('displayed-text');
                     displayedTextElement.innerText = text;
@@ -22,7 +23,7 @@ const Content = () => {
                     <div>
                               
                      {/* Textarea */}
-                    <textarea ref={textRef} placeholder="Enter text"></textarea><br/>
+                    <textarea id='myId' ref={textRef} placeholder="Enter text"></textarea><br/>
 
                     {/* Button */}
                     <button onClick={handleClick}>Display Text</button>
