@@ -7,18 +7,13 @@ const TodoForm = () => {
   const [task, setTask] = useState("");
   const [toDo, setToDo] = useState([]);
 
-  const AddTask = () => {
-    if (task.trim() !== "") {
-      setToDo([...toDo, task]);
-      setTask("");
-    }
-  };
-
-  const RemoveToDo = (index) => {
-    const updatedList = [...toDo];
-    updatedList.splice(index, 1);
-    setToDo(updatedList);
-  };
+  const AddTask = ()=>{
+    setToDo([...toDo, task]);
+}
+const RemoveToDo = (index)=>{
+  toDo.splice(index, 1);
+  setToDo([...toDo]);
+}
 
   return (
     <div className="container mt-4">
@@ -44,7 +39,7 @@ const TodoForm = () => {
                   {toDo.length !== 0 ? (
                     toDo.map((element, index) => (
                       <tr key={String(index)}>
-                        <td style={{ color: "#0066cc" }}>{element}</td> {/* Custom color for list items */}
+                        <td style={{color:"#0066cc"}}>{element}</td> {/* Custom color for list items */}
                         <td>
                           <button
                             className="btn btn-danger"
