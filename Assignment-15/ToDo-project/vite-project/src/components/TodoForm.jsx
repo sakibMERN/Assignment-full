@@ -18,7 +18,7 @@ const TodoForm = () => {
 
           return (
                     <div>
-                              <p>{toDo}</p>
+                              
                               <input onChange={(e)=>{setTask(e.target.value)}} type="text" placeholder="Write your task" />
                               <button onClick={AddTask}>Add Task</button>
 
