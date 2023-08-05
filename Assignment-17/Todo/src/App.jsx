@@ -1,10 +1,10 @@
-import React from 'react';
+
 import TodoPage from './pages/TodoPage';
 
 
 const App = () => {
   return (
-    <div className='App'>
+    <div>
       <TodoPage/>
     </div>
   );
